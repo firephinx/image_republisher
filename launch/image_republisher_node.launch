@@ -1,0 +1,10 @@
+<launch>
+
+  <node pkg="image_republisher" type="image_republisher_node" name="image_republisher_node" output="screen">
+    <param name="input_image_topic_name"    	value="/camera/raw" />
+    <param name="input_image_transport_type" 	value="raw" />
+    <param name="output_image_topic_name"   	value="/image_republisher/camera/raw" />
+    <param name="output_image_frame_id_name"	value="" />
+  </node>
+
+</launch>
